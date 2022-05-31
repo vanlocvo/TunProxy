@@ -15,7 +15,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Make Gradle executable
-      run: chmod +x ./gradlew
+      run: cd android_app && chmod +x ./gradlew
     - name: Build with Gradle
       run: ./gradlew build
     - name: Build Debug APK
