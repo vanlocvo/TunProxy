@@ -1,4 +1,6 @@
-ame: Generated APK AAB (Download (still in development))
+name: Generated APK 
+
+on: [push]
 
 env:
   # The name of the main module repository
