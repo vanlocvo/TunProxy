@@ -4,7 +4,7 @@ on: [push]
 
 env:
   # The name of the main module repository
-  main_project_module: android_app/app
+  main_project_module: app
 
 jobs:
   build:
