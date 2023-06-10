@@ -37,8 +37,9 @@ jobs:
       - name: Build apk release project (APK)
         run: ./gradlew assemble
 
-      # Download Artifact Build
-      - name: Download APK Release
-        uses: actions/download-artifact@v3
+      # Save build file to artifact
+      - name: Save build file to artifact
+        uses: actions/upload-artifact@v3
         with:
           path: app/build/outputs/apk/release/
+          name: release
