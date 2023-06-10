@@ -13,7 +13,6 @@ android {
         targetSdkVersion 33
         versionCode 100270
         versionName VERSION_NAME
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
                 cppFlags "-std=c++17 -fvisibility=hidden "
@@ -21,7 +20,6 @@ android {
                 arguments "-DCMAKE_VERBOSE_MAKEFILE=1 -DANDROID_FUNCTION_LEVEL_LINKING=ON"
             }
         }
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {
         debug {
@@ -78,7 +76,4 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'androidx.navigation:navigation-fragment:2.0.0'
     implementation 'androidx.navigation:navigation-ui:2.0.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
